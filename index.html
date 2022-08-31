@@ -13,6 +13,72 @@
     <title>formulario</title>
 </head>
 <body>
-    
+    <header>
+        <a class="logo" href=""><img src="img/icono.jfif" alt=""></a>
+        <nav>
+                <a href="">INICIO</a>
+                <a href="">ESTUDIANTES</a>
+                <a href="">PROFESORES</a> 
+        </nav>
+        <div class="opciones">
+            <a href=""><img id="search" src="img/Search.png" alt=""></a>
+            <a href=""><img id="user" src="img/User.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <h1>Registro de profesores</h1>
+        <section>
+            <form  action="page.php" method="post">
+                <div class="contenido_form">
+                    <label for="name">Nombre</label><br>
+                    <input type="text" id="name" name="nombre" placeholder="name" size="20" required><br><br>
+                </div>
+                <div class="contenido_form">
+                    <label for="last_name">Apellido</label><br>
+                    <input type="text" id="last_name" name="apellido" placeholder="last_name" size="20" required><br><br>
+                </div>  
+                <div class="contenido_form">    
+                    <label for="opciones_id">Tipo de identificación</label><br>
+                    <select name="opciones" id="opciones_id"  required>
+                        <option value="0" selected="selected" disabled>seleccionar</option>
+                        <option value="1">Tarjeta de Identidad</option>
+                        <option value="2">Cedula de Extrajeria</option>
+                        <option value="3">Cedula de Ciudadania</option>
+                    </select>
+                </div><br>     
+                <div class="contenido_form">  
+                    <label for="email">Correo Electronico</label><br>
+                    <input type="email" id="email" name="email" placeholder="email" size="20" required><br><br>
+                </div>
+                <div class="contenido_form">  
+                    <label for="contrasena">contraseña</label><br>
+                    <input type="password" id="contrasena" name="password" placeholder="password" size="20" required><br><br>
+                </div>
+                <div class="contenido_form">  
+                    <label for="telefono">Telefono</label><br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="telefono" size="20" required><br><br>
+                </div> 
+                <div class="texbox">
+                  <label for="sugerencias">sugerencias</label><br>
+                  <textarea name="sugerencias" id="sugerencias" cols="30" rows="10"></textarea> 
+                </div>
+                <div class="contenido_form">  
+                    <label for="preferencia">¿Quieres recibir información del centro SENA?</label><br>
+                    <div><input type="radio" id="preferencia" name="preferencia" required autocomplete>Si</div>
+                    <div><input type="radio" id="preferencia" name="preferencia" required autocomplete>No</div>
+                </div>
+                <div class="privacidad">
+                    <input type="checkbox" required>
+                    <label for="">He leído y acepto las politicas de privacidad</label>
+                </div>
+                <div class="submit">
+                <input  id="button" type="button" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
