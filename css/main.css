@@ -206,3 +206,10 @@ textarea{
     -ms-border-radius: 5px;
     cursor: pointer;
 }
+
+.default{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
